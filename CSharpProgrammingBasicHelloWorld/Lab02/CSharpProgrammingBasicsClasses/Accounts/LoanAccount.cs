@@ -1,4 +1,5 @@
 ﻿using CSharpProgrammingBasics.Classes.Common;
+using CSharpProgrammingBasics.Classes.Helpers;
 using CSharpProgrammingBasics.Classes.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -84,6 +85,9 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             }
         }
 
-
+        protected override string GenerateAccountNumber()
+        {
+            return AccountHelper.GenerateAccountNumber(GetType(), this.ID);
+        }
     }
 }

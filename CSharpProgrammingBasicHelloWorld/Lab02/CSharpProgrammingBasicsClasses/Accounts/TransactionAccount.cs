@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CSharpProgrammingBasics.Classes.Interfaces;
+using CSharpProgrammingBasics.Classes.Helpers;
 
 namespace CSharpProgrammingBasics.Classes.Accounts
 {
@@ -35,7 +36,11 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             return this.ID + " " + this.Number + "  Transaction Account"; 
         }
 
+        protected override string GenerateAccountNumber()
+        {
+           
 
-
+            return AccountHelper.GenerateAccountNumber(GetType(), this.ID);
+        }
     }
 }

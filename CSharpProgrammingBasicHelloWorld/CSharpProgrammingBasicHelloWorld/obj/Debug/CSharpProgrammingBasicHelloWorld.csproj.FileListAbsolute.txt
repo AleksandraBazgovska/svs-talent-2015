@@ -6,3 +6,11 @@ c:\users\aleksandra\documents\visual studio 2015\Projects\CSharpProgrammingBasic
 c:\users\aleksandra\documents\visual studio 2015\Projects\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.pdb
 c:\users\aleksandra\documents\visual studio 2015\Projects\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicsClasses.dll
 c:\users\aleksandra\documents\visual studio 2015\Projects\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicsClasses.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicHelloWorld.exe.config
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicHelloWorld.exe
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicHelloWorld.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicsClasses.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicsClasses.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.csprojResolveAssemblyReference.cache
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.exe
+C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.pdb

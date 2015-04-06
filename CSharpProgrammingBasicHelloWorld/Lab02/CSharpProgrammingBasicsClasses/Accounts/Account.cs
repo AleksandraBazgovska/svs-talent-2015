@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using CSharpProgrammingBasics.Classes.Interfaces;
 using CSharpProgrammingBasics.Classes.Common;
+using CSharpProgrammingBasics.Classes.Helpers;
+
 
 
 namespace CSharpProgrammingBasics.Classes.Accounts
 {
-   public class Account : IAccount
+   public abstract class Account : IAccount
     {
         /// <summary>
         /// Definiranje na fields
@@ -26,7 +28,7 @@ namespace CSharpProgrammingBasics.Classes.Accounts
         public long ID
         {
             get { return m_Id; }
-           private set { m_Id = value; }
+          set { m_Id = value; }
         }
                
 
@@ -70,7 +72,8 @@ namespace CSharpProgrammingBasics.Classes.Accounts
         public Account(string currency) : this(-1, "X", currency)
         {
             this.Currency = currency;
-            
+            this.ID = AccountHelper.GenerateAccountId();
+            this.Number = GenerateAccountNumber();
         }
 
         /// <summary>
@@ -122,6 +125,9 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             return this.ID + " " + this.Number + " Account"; 
         }
 
+        protected abstract string GenerateAccountNumber();
+        
+        
 
 
 

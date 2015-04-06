@@ -1,4 +1,5 @@
-﻿using CSharpProgrammingBasics.Classes.Interfaces;
+﻿using CSharpProgrammingBasics.Classes.Helpers;
+using CSharpProgrammingBasics.Classes.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -78,5 +79,9 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             return base.ToString() + " Deposit Account"; 
         }
 
+        protected override string GenerateAccountNumber()
+        {
+          return  AccountHelper.GenerateAccountNumber(GetType(), this.ID);
+        }
     }
 }

@@ -167,12 +167,37 @@ namespace CSharpProgrammingBasicsTransactionApp
             DepositAccount deposit = new DepositAccount(txtCurrency.Text, new CSharpProgrammingBasics.Classes.Common.TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
                 new CSharpProgrammingBasics.Classes.Common.InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
 
+
             accountCommonLabel(deposit);
             CheckDepositAccount(deposit);
             CheckTransactionAccount(deposit);
 
 
         }
+
+        /// <summary>
+        /// So ovoj metod se kreira instanca od tip Loan Account
+        /// </summary>
+
+        private ILoanAccount CreateLoanAccount()
+        {
+            UnitOfTime myTime;
+            Enum.TryParse(comboBox1.SelectedItem.ToString(), out myTime);
+
+            //Konverzija na enum vo string za Interest svojstvoto 
+            UnitOfTime myInterest;
+            Enum.TryParse(comboBox2.SelectedItem.ToString(), out myInterest);
+
+            //Kretiranje na Transaction Account
+            ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
+            LoanAccount loan = new LoanAccount(txtCurrency.Text, new CSharpProgrammingBasics.Classes.Common.TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
+                new CSharpProgrammingBasics.Classes.Common.InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
+
+
+            return loan;
+        }
+
+        
 
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -203,18 +228,44 @@ namespace CSharpProgrammingBasicsTransactionApp
             ITransactionProcessor transferProcessor = new TransactionProcessor();
 
             //Izvrshuvanje na transfer na pari od edna smetka na druga 
+            //CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
+            //transferProcessor.processTransaction(TransactionType.Transfer, amount, transaction, deposit);
+
+            //accountCommonLabel(transaction);
+            //CheckDepositAccount(transaction);
+            //CheckTransactionAccount(transaction);
+
+            //accountCommonLabelSecond(deposit);
+            //CheckDepositAccountSecond(deposit);
+            //CheckTransactionAccountSecond(deposit);
+
+            //CheckTransactionAccountSecond(deposit.TransactionAccount);
+
+
+            //Transfer from ITransactionaccount to ILoanAccount II primer
+
+            ILoanAccount loan = CreateLoanAccount();
             CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
-            transferProcessor.processTransaction(TransactionType.Transfer, amount, transaction, deposit);
+            transferProcessor.processTransaction(TransactionType.Transfer, amount, transaction, loan);
 
             accountCommonLabel(transaction);
             CheckDepositAccount(transaction);
             CheckTransactionAccount(transaction);
 
-            accountCommonLabelSecond(deposit);
-            CheckDepositAccountSecond(deposit);
-            CheckTransactionAccountSecond(deposit);
+            accountCommonLabelSecond(loan);
+            CheckDepositAccountSecond(loan);
+            CheckTransactionAccountSecond(loan);
 
-            //CheckTransactionAccountSecond(deposit.TransactionAccount);
+
+            //Transfer from ILoanAccount to IDepositAccount
+            //transferProcessor.processTransaction(TransactionType.Transfer,amount,loan,transaction);
+            //accountCommonLabel(loan);
+            //CheckDepositAccount(loan);
+            //CheckTransactionAccount(loan);
+
+            //accountCommonLabelSecond(transaction);
+            //CheckDepositAccountSecond(transaction);
+            //CheckTransactionAccountSecond(transaction);
         }
     }
 }
