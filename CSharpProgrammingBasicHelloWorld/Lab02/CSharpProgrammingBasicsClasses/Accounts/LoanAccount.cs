@@ -26,11 +26,7 @@ namespace CSharpProgrammingBasics.Classes.Accounts
 
         }
 
-        //public LoanAccount() : base("MKD", new TimePeriod(20, UnitOfTime.Day), new InterestRate(15, UnitOfTime.Month), DateTime.Now, DateTime.Now, new TransactionAccount("MKD", 100000))
-        //{
-
-        //}
-
+        
         /// <summary>
         /// Override na metodot CreditAmount pri shto vo ovoj sliucaj ima obratno svojstvo ( ja namaluva Balance)
         /// </summary>

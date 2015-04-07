@@ -29,24 +29,7 @@
         private void InitializeComponent()
         {
             this.Transsaction = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtLimit = new System.Windows.Forms.TextBox();
-            this.txtCurrency = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtPercent = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPeriod = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btnCreateTransactionAccount = new System.Windows.Forms.Button();
-            this.btnCreateDepositAccount = new System.Windows.Forms.Button();
+            this.btnMakeTransaction = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.lblEndDate_To = new System.Windows.Forms.Label();
@@ -71,6 +54,24 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.btnCreateTransactionAccount = new System.Windows.Forms.Button();
+            this.btnCreateDepositAccount = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtLimit = new System.Windows.Forms.TextBox();
+            this.txtCurrency = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPercent = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPeriod = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lblEndDate = new System.Windows.Forms.Label();
@@ -95,14 +96,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnMakeTransaction = new System.Windows.Forms.Button();
             this.Transsaction.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -119,181 +119,19 @@
             this.Transsaction.Controls.Add(this.groupBox1);
             this.Transsaction.Location = new System.Drawing.Point(12, 12);
             this.Transsaction.Name = "Transsaction";
-            this.Transsaction.Size = new System.Drawing.Size(843, 416);
+            this.Transsaction.Size = new System.Drawing.Size(796, 410);
             this.Transsaction.TabIndex = 2;
             this.Transsaction.TabStop = false;
             // 
-            // groupBox3
+            // btnMakeTransaction
             // 
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.txtLimit);
-            this.groupBox3.Controls.Add(this.txtCurrency);
-            this.groupBox3.Location = new System.Drawing.Point(0, 19);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(242, 141);
-            this.groupBox3.TabIndex = 7;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Transaction Account Characteristics";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Limit";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Limit Currency";
-            // 
-            // txtLimit
-            // 
-            this.txtLimit.Location = new System.Drawing.Point(96, 59);
-            this.txtLimit.Name = "txtLimit";
-            this.txtLimit.Size = new System.Drawing.Size(104, 20);
-            this.txtLimit.TabIndex = 6;
-            this.txtLimit.Text = "10000";
-            // 
-            // txtCurrency
-            // 
-            this.txtCurrency.Location = new System.Drawing.Point(96, 23);
-            this.txtCurrency.Name = "txtCurrency";
-            this.txtCurrency.Size = new System.Drawing.Size(104, 20);
-            this.txtCurrency.TabIndex = 5;
-            this.txtCurrency.Text = "MKD";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtPercent);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtPeriod);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(248, 19);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(293, 141);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Deposit Account Characteristics";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(77, 103);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 109);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "End Date";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(77, 76);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Start Date";
-            // 
-            // txtPercent
-            // 
-            this.txtPercent.Location = new System.Drawing.Point(60, 49);
-            this.txtPercent.Name = "txtPercent";
-            this.txtPercent.Size = new System.Drawing.Size(100, 20);
-            this.txtPercent.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Interest";
-            // 
-            // txtPeriod
-            // 
-            this.txtPeriod.Location = new System.Drawing.Point(60, 25);
-            this.txtPeriod.Name = "txtPeriod";
-            this.txtPeriod.Size = new System.Drawing.Size(100, 20);
-            this.txtPeriod.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Period";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Day",
-            "Month",
-            "Year"});
-            this.comboBox1.Location = new System.Drawing.Point(177, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Day",
-            "Month",
-            "Year"});
-            this.comboBox2.Location = new System.Drawing.Point(177, 48);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 15;
-            // 
-            // btnCreateTransactionAccount
-            // 
-            this.btnCreateTransactionAccount.Location = new System.Drawing.Point(561, 33);
-            this.btnCreateTransactionAccount.Name = "btnCreateTransactionAccount";
-            this.btnCreateTransactionAccount.Size = new System.Drawing.Size(175, 27);
-            this.btnCreateTransactionAccount.TabIndex = 10;
-            this.btnCreateTransactionAccount.Text = "Create Transaction Account";
-            this.btnCreateTransactionAccount.UseVisualStyleBackColor = true;
-            // 
-            // btnCreateDepositAccount
-            // 
-            this.btnCreateDepositAccount.Location = new System.Drawing.Point(561, 70);
-            this.btnCreateDepositAccount.Name = "btnCreateDepositAccount";
-            this.btnCreateDepositAccount.Size = new System.Drawing.Size(175, 28);
-            this.btnCreateDepositAccount.TabIndex = 11;
-            this.btnCreateDepositAccount.Text = "Create Deposit Account";
-            this.btnCreateDepositAccount.UseVisualStyleBackColor = true;
+            this.btnMakeTransaction.Location = new System.Drawing.Point(582, 90);
+            this.btnMakeTransaction.Name = "btnMakeTransaction";
+            this.btnMakeTransaction.Size = new System.Drawing.Size(175, 26);
+            this.btnMakeTransaction.TabIndex = 13;
+            this.btnMakeTransaction.Text = "Transfer transaction";
+            this.btnMakeTransaction.UseVisualStyleBackColor = true;
+            this.btnMakeTransaction.Click += new System.EventHandler(this.btnMakeTransaction_Click);
             // 
             // groupBox6
             // 
@@ -524,6 +362,180 @@
             this.label36.TabIndex = 17;
             this.label36.Text = "ID";
             // 
+            // btnCreateTransactionAccount
+            // 
+            this.btnCreateTransactionAccount.Location = new System.Drawing.Point(582, 19);
+            this.btnCreateTransactionAccount.Name = "btnCreateTransactionAccount";
+            this.btnCreateTransactionAccount.Size = new System.Drawing.Size(175, 27);
+            this.btnCreateTransactionAccount.TabIndex = 10;
+            this.btnCreateTransactionAccount.Text = "Create Transaction Account";
+            this.btnCreateTransactionAccount.UseVisualStyleBackColor = true;
+            this.btnCreateTransactionAccount.Click += new System.EventHandler(this.btnCreateTransactionAccount_Click_1);
+            // 
+            // btnCreateDepositAccount
+            // 
+            this.btnCreateDepositAccount.Location = new System.Drawing.Point(582, 56);
+            this.btnCreateDepositAccount.Name = "btnCreateDepositAccount";
+            this.btnCreateDepositAccount.Size = new System.Drawing.Size(175, 28);
+            this.btnCreateDepositAccount.TabIndex = 11;
+            this.btnCreateDepositAccount.Text = "Create Deposit Account";
+            this.btnCreateDepositAccount.UseVisualStyleBackColor = true;
+            this.btnCreateDepositAccount.Click += new System.EventHandler(this.btnCreateDepositAccount_Click_1);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.txtLimit);
+            this.groupBox3.Controls.Add(this.txtCurrency);
+            this.groupBox3.Location = new System.Drawing.Point(0, 19);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(242, 141);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Transaction Account Characteristics";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Limit";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Limit Currency";
+            // 
+            // txtLimit
+            // 
+            this.txtLimit.Location = new System.Drawing.Point(96, 59);
+            this.txtLimit.Name = "txtLimit";
+            this.txtLimit.Size = new System.Drawing.Size(104, 20);
+            this.txtLimit.TabIndex = 6;
+            this.txtLimit.Text = "10000";
+            // 
+            // txtCurrency
+            // 
+            this.txtCurrency.Location = new System.Drawing.Point(96, 23);
+            this.txtCurrency.Name = "txtCurrency";
+            this.txtCurrency.Size = new System.Drawing.Size(104, 20);
+            this.txtCurrency.TabIndex = 5;
+            this.txtCurrency.Text = "MKD";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtPercent);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtPeriod);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(248, 19);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(293, 141);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Deposit Account Characteristics";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Day",
+            "Month",
+            "Year"});
+            this.comboBox2.Location = new System.Drawing.Point(177, 48);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 15;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Day",
+            "Month",
+            "Year"});
+            this.comboBox1.Location = new System.Drawing.Point(177, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 14;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(77, 103);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 109);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "End Date";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(77, 76);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Start Date";
+            // 
+            // txtPercent
+            // 
+            this.txtPercent.Location = new System.Drawing.Point(60, 49);
+            this.txtPercent.Name = "txtPercent";
+            this.txtPercent.Size = new System.Drawing.Size(100, 20);
+            this.txtPercent.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Interest";
+            // 
+            // txtPeriod
+            // 
+            this.txtPeriod.Location = new System.Drawing.Point(60, 25);
+            this.txtPeriod.Name = "txtPeriod";
+            this.txtPeriod.Size = new System.Drawing.Size(100, 20);
+            this.txtPeriod.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Period";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBox5);
@@ -753,31 +765,17 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "ID";
             // 
-            // btnMakeTransaction
-            // 
-            this.btnMakeTransaction.Location = new System.Drawing.Point(561, 104);
-            this.btnMakeTransaction.Name = "btnMakeTransaction";
-            this.btnMakeTransaction.Size = new System.Drawing.Size(175, 26);
-            this.btnMakeTransaction.TabIndex = 13;
-            this.btnMakeTransaction.Text = "Transfer transaction";
-            this.btnMakeTransaction.UseVisualStyleBackColor = true;
-            this.btnMakeTransaction.Click += new System.EventHandler(this.btnMakeTransaction_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 491);
+            this.ClientSize = new System.Drawing.Size(817, 429);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Transsaction);
             this.Name = "frmMain";
             this.Text = "Account Details Form";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.Transsaction.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -785,6 +783,10 @@
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();

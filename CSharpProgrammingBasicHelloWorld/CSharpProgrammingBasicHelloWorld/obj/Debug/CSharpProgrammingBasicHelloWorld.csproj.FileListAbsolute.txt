@@ -14,3 +14,11 @@ C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSha
 C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.csprojResolveAssemblyReference.cache
 C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.exe
 C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.pdb
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicHelloWorld.exe.config
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.exe
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.pdb
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicHelloWorld.exe
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicHelloWorld.pdb
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicsClasses.dll
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicsClasses.pdb
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.csprojResolveAssemblyReference.cache

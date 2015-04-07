@@ -8,3 +8,8 @@ C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab0
 C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.dll
 C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.pdb
 C:\Users\code\Desktop\Alek\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\bin\Debug\CSharpProgrammingBasicsClasses.dll
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\bin\Debug\CSharpProgrammingBasicsClasses.pdb
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.dll
+C:\Users\Aleksandra\Desktop\GitHub_Obuka\svs-talent-2015\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.pdb

@@ -9,9 +9,10 @@ namespace CSharpProgrammingBasics.Classes.Helpers
 {
    public static class AccountHelper
     {
-
+        //promenliva za Id na Account 
         private static int s_AccountId;
 
+        //Static konstruktor
        static AccountHelper()
         {
             s_AccountId = 0;
@@ -31,18 +32,18 @@ namespace CSharpProgrammingBasics.Classes.Helpers
             if (accountType == typeof(TransactionAccount))
             {
 
-                return "TR" + (0000 + accountId);
+                return "TR" + accountId.ToString("D6");
             }
 
             else if (accountType == typeof(DepositAccount))
             {
 
-                return "DP" + (0000 + accountId);
+                return "DP" + accountId.ToString("D6");
             }
             else if (accountType == typeof(LoanAccount))
             {
 
-                return "LN" + (0000 + accountId);
+                return "LN" + accountId.ToString("D6");
             }
             else
                 return "";

@@ -42,7 +42,7 @@ namespace CSharpProgrammingBasics.Classes.Accounts
         public string Currency { get; set; } // auto-implemented property for Currency
 
        
-        public Common.CurrencyAmount Balance // Mozno e da se pojavi problem ? 
+        public Common.CurrencyAmount Balance 
         {
             get { return m_Balance; }
             set {
@@ -63,7 +63,7 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             this.ID = id;
             this.Number = number;
             this.Currency = currency;
-            this.Balance = new Common.CurrencyAmount(100000, currency);
+            this.Balance = new Common.CurrencyAmount(10000,currency);
         }
         /// <summary>
         /// Definiranje na konstruktor so eden parametar pri shto se povikuva drug konstruktor od istava klasa so this

@@ -35,10 +35,26 @@ namespace CSharpProgrammingBasics.Classes.Processors
 
                 case TransactionType.Transfer:
                     {
-                        accountFrom.DebitAmount(currencyAmount);
-                        accountTo.CreditAmount(currencyAmount);
-                        return TransactionStatus.Completed;
-                                              
+                        if(accountFrom.DebitAmount(currencyAmount) == TransactionStatus.Completed && accountTo.CreditAmount(currencyAmount)== TransactionStatus.Completed)
+                        {
+                            return TransactionStatus.Completed;
+                        }
+                        else if(accountFrom.DebitAmount(currencyAmount)== TransactionStatus.Failed && accountTo.CreditAmount(currencyAmount)== TransactionStatus.Completed)
+                        {
+                            accountTo.DebitAmount(currencyAmount);
+                            return TransactionStatus.Failed;
+                        }
+                        else
+                            if(accountFrom.DebitAmount(currencyAmount) == TransactionStatus.Completed && accountTo.CreditAmount(currencyAmount) == TransactionStatus.Failed)
+                        {
+                            accountFrom.CreditAmount(currencyAmount);
+                            return TransactionStatus.Failed;
+                        }
+                          else
+                        {
+                            return TransactionStatus.Failed;
+                        }
+
                     }
                 default:
                     return TransactionStatus.Failed;

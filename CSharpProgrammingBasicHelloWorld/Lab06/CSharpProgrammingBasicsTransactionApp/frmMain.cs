@@ -28,7 +28,7 @@ namespace CSharpProgrammingBasicsTransactionApp
         /// <param name="e"></param>
         private void btnCreateTransactionAccount_Click(object sender, EventArgs e)
         {
-            TransactionAccount transAccount = new TransactionAccount(txtCurrency.Text,Convert.ToDecimal(txtLimit.Text));
+            ITransactionAccount transAccount = new TransactionAccount(txtCurrency.Text,Convert.ToDecimal(txtLimit.Text));
             accountCommonLabel(transAccount);
             CheckDepositAccount(transAccount);
             CheckTransactionAccount(transAccount);           
@@ -164,8 +164,8 @@ namespace CSharpProgrammingBasicsTransactionApp
             //Kretiranje na Transaction Account
             ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
 
-            DepositAccount deposit = new DepositAccount(txtCurrency.Text, new CSharpProgrammingBasics.Classes.Common.TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
-                new CSharpProgrammingBasics.Classes.Common.InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
+            IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
+                new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
 
 
             accountCommonLabel(deposit);
@@ -197,6 +197,15 @@ namespace CSharpProgrammingBasicsTransactionApp
             return loan;
         }
 
+        //Pomoshen metod za kreiranje na instanca od TransactionAccount
+        private  ITransactionAccount CreateTransactionAccount()
+        {
+            ITransactionAccount transAccount = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
+            accountCommonLabel(transAccount);
+            CheckDepositAccount(transAccount);
+            CheckTransactionAccount(transAccount);
+            return transAccount;
+        }
         
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -212,11 +221,10 @@ namespace CSharpProgrammingBasicsTransactionApp
         /// <param name="e"></param>
         private void btnMakeTransaction_Click(object sender, EventArgs e)
         {
+            // Prviot primer pri transakcija od Transaction Account na Deposit Account
             //Kreiranje na instanca od tip Transaction Account
-            ITransactionAccount transaction = new TransactionAccount("MKD", 50000);
+            ITransactionAccount transaction = new TransactionAccount("MKD", 50000);     
             
-            
-
             //Definiranje na pomoshni promenlivi za kreiranje na instanca od soodvetna struktura
             TimePeriod timePeriod = new TimePeriod(20, UnitOfTime.Day);
             InterestRate interestRate = new InterestRate(15, UnitOfTime.Day);
@@ -227,7 +235,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             //Keriranje na instanca od tip TransactionProcessor
             ITransactionProcessor transferProcessor = new TransactionProcessor();
 
-            //Izvrshuvanje na transfer na pari od edna smetka na druga 
+            //Izvrshuvanje na transfer na pari od edna smetka na druga I primer
             //CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
             //transferProcessor.processTransaction(TransactionType.Transfer, amount, transaction, deposit);
 
@@ -244,20 +252,21 @@ namespace CSharpProgrammingBasicsTransactionApp
 
             //Transfer from ITransactionaccount to ILoanAccount II primer
 
-            ILoanAccount loan = CreateLoanAccount();
+            ILoanAccount loan = CreateLoanAccount(); //Kreiranje na instanca od LoanAccount so pomosh na veke gotov metod
+            ITransactionAccount transAccount = CreateTransactionAccount(); //Kreiranje na instanca od TransactionAccount so pomosh na veke gotov metod
             CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
-            transferProcessor.processTransaction(TransactionType.Transfer, amount, transaction, loan);
+            transferProcessor.processTransaction(TransactionType.Transfer, amount, transAccount, loan);
 
-            accountCommonLabel(transaction);
-            CheckDepositAccount(transaction);
-            CheckTransactionAccount(transaction);
+            accountCommonLabel(transAccount);
+            CheckDepositAccount(transAccount);
+            CheckTransactionAccount(transAccount);
 
             accountCommonLabelSecond(loan);
             CheckDepositAccountSecond(loan);
             CheckTransactionAccountSecond(loan);
 
 
-            //Transfer from ILoanAccount to IDepositAccount
+            //Transfer from ILoanAccount to IDepositAccount III primer
             //transferProcessor.processTransaction(TransactionType.Transfer,amount,loan,transaction);
             //accountCommonLabel(loan);
             //CheckDepositAccount(loan);
@@ -266,6 +275,43 @@ namespace CSharpProgrammingBasicsTransactionApp
             //accountCommonLabelSecond(transaction);
             //CheckDepositAccountSecond(transaction);
             //CheckTransactionAccountSecond(transaction);
+        }
+
+
+        /// <summary>
+        /// Metodite se definirani po vtor pat zatoa shto ne rabotea prethodno 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCreateTransactionAccount_Click_1(object sender, EventArgs e)
+        {
+            ITransactionAccount transAccount = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
+            accountCommonLabel(transAccount);
+            CheckDepositAccount(transAccount);
+            CheckTransactionAccount(transAccount);
+
+        }
+
+        private void btnCreateDepositAccount_Click_1(object sender, EventArgs e)
+        {
+            //Konverzija na enum vo string za Period svojstvoto 
+            UnitOfTime myTime;
+            Enum.TryParse(comboBox1.SelectedItem.ToString(), out myTime);
+
+            //KOnverzija na enum vo string za Interest svojstvoto 
+            UnitOfTime myInterest;
+            Enum.TryParse(comboBox2.SelectedItem.ToString(), out myInterest);
+
+            //Kretiranje na Transaction Account
+            ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
+
+            IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
+                new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
+
+
+            accountCommonLabel(deposit);
+            CheckDepositAccount(deposit);
+            CheckTransactionAccount(deposit);
         }
     }
 }
