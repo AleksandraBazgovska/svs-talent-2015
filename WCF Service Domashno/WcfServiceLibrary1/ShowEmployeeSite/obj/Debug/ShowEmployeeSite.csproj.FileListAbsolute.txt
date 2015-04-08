@@ -1,0 +1,12 @@
+c:\users\aleksandra\documents\visual studio 2015\Projects\WcfServiceLibrary1\ShowEmployeeSite\bin\ShowEmployeeSite.dll.config
+c:\users\aleksandra\documents\visual studio 2015\Projects\WcfServiceLibrary1\ShowEmployeeSite\bin\ShowEmployeeSite.dll
+c:\users\aleksandra\documents\visual studio 2015\Projects\WcfServiceLibrary1\ShowEmployeeSite\bin\ShowEmployeeSite.pdb
+c:\users\aleksandra\documents\visual studio 2015\Projects\WcfServiceLibrary1\ShowEmployeeSite\obj\Debug\ShowEmployeeSite.dll
+c:\users\aleksandra\documents\visual studio 2015\Projects\WcfServiceLibrary1\ShowEmployeeSite\obj\Debug\ShowEmployeeSite.pdb
+c:\users\aleksandra\documents\visual studio 2015\Projects\WcfServiceLibrary1\ShowEmployeeSite\obj\Debug\ShowEmployeeSite.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\New folder\WcfServiceLibrary1\ShowEmployeeSite\bin\ShowEmployeeSite.dll.config
+C:\Users\Aleksandra\Desktop\New folder\WcfServiceLibrary1\ShowEmployeeSite\bin\ShowEmployeeSite.dll
+C:\Users\Aleksandra\Desktop\New folder\WcfServiceLibrary1\ShowEmployeeSite\bin\ShowEmployeeSite.pdb
+C:\Users\Aleksandra\Desktop\New folder\WcfServiceLibrary1\ShowEmployeeSite\obj\Debug\ShowEmployeeSite.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\New folder\WcfServiceLibrary1\ShowEmployeeSite\obj\Debug\ShowEmployeeSite.dll
+C:\Users\Aleksandra\Desktop\New folder\WcfServiceLibrary1\ShowEmployeeSite\obj\Debug\ShowEmployeeSite.pdb
