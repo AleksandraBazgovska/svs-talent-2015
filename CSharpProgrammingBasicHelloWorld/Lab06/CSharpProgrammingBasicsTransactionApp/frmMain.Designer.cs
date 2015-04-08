@@ -96,6 +96,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnMakeGroupTransaction = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblTotalTransactionCount = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.lblAmount = new System.Windows.Forms.Label();
+            this.lblTransType = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.Transsaction.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -107,10 +117,15 @@
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // Transsaction
             // 
+            this.Transsaction.Controls.Add(this.groupBox11);
+            this.Transsaction.Controls.Add(this.lblTotalTransactionCount);
+            this.Transsaction.Controls.Add(this.label11);
+            this.Transsaction.Controls.Add(this.btnMakeGroupTransaction);
             this.Transsaction.Controls.Add(this.btnMakeTransaction);
             this.Transsaction.Controls.Add(this.groupBox6);
             this.Transsaction.Controls.Add(this.btnCreateTransactionAccount);
@@ -119,7 +134,7 @@
             this.Transsaction.Controls.Add(this.groupBox1);
             this.Transsaction.Location = new System.Drawing.Point(12, 12);
             this.Transsaction.Name = "Transsaction";
-            this.Transsaction.Size = new System.Drawing.Size(796, 410);
+            this.Transsaction.Size = new System.Drawing.Size(796, 714);
             this.Transsaction.TabIndex = 2;
             this.Transsaction.TabStop = false;
             // 
@@ -138,7 +153,7 @@
             this.groupBox6.Controls.Add(this.groupBox7);
             this.groupBox6.Controls.Add(this.groupBox8);
             this.groupBox6.Controls.Add(this.groupBox9);
-            this.groupBox6.Location = new System.Drawing.Point(399, 166);
+            this.groupBox6.Location = new System.Drawing.Point(3, 454);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(390, 244);
             this.groupBox6.TabIndex = 12;
@@ -765,17 +780,111 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "ID";
             // 
+            // btnMakeGroupTransaction
+            // 
+            this.btnMakeGroupTransaction.Location = new System.Drawing.Point(582, 122);
+            this.btnMakeGroupTransaction.Name = "btnMakeGroupTransaction";
+            this.btnMakeGroupTransaction.Size = new System.Drawing.Size(175, 25);
+            this.btnMakeGroupTransaction.TabIndex = 14;
+            this.btnMakeGroupTransaction.Text = "Make Group Transaction";
+            this.btnMakeGroupTransaction.UseVisualStyleBackColor = true;
+            this.btnMakeGroupTransaction.Click += new System.EventHandler(this.btnMakeGroupTransaction_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(422, 177);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(121, 13);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Total Transaction Count";
+            // 
+            // lblTotalTransactionCount
+            // 
+            this.lblTotalTransactionCount.AutoSize = true;
+            this.lblTotalTransactionCount.Location = new System.Drawing.Point(579, 177);
+            this.lblTotalTransactionCount.Name = "lblTotalTransactionCount";
+            this.lblTotalTransactionCount.Size = new System.Drawing.Size(0, 13);
+            this.lblTotalTransactionCount.TabIndex = 16;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.lblStatus);
+            this.groupBox11.Controls.Add(this.lblAmount);
+            this.groupBox11.Controls.Add(this.lblTransType);
+            this.groupBox11.Controls.Add(this.label29);
+            this.groupBox11.Controls.Add(this.label30);
+            this.groupBox11.Controls.Add(this.label31);
+            this.groupBox11.Location = new System.Drawing.Point(425, 207);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(199, 203);
+            this.groupBox11.TabIndex = 17;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Transaction Log Entry Details";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(94, 74);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblStatus.TabIndex = 26;
+            // 
+            // lblAmount
+            // 
+            this.lblAmount.AutoSize = true;
+            this.lblAmount.Location = new System.Drawing.Point(94, 49);
+            this.lblAmount.Name = "lblAmount";
+            this.lblAmount.Size = new System.Drawing.Size(0, 13);
+            this.lblAmount.TabIndex = 25;
+            // 
+            // lblTransType
+            // 
+            this.lblTransType.AutoSize = true;
+            this.lblTransType.Location = new System.Drawing.Point(116, 25);
+            this.lblTransType.Name = "lblTransType";
+            this.lblTransType.Size = new System.Drawing.Size(0, 13);
+            this.lblTransType.TabIndex = 24;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(11, 77);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(37, 13);
+            this.label29.TabIndex = 21;
+            this.label29.Text = "Status";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(11, 49);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(43, 13);
+            this.label30.TabIndex = 19;
+            this.label30.Text = "Amount";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(11, 25);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(90, 13);
+            this.label31.TabIndex = 17;
+            this.label31.Text = "Transaction Type";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 429);
+            this.ClientSize = new System.Drawing.Size(900, 773);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Transsaction);
             this.Name = "frmMain";
             this.Text = "Account Details Form";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.Transsaction.ResumeLayout(false);
+            this.Transsaction.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -794,6 +903,8 @@
             this.groupBox4.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -867,6 +978,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnMakeTransaction;
+        private System.Windows.Forms.Button btnMakeGroupTransaction;
+        private System.Windows.Forms.Label lblTotalTransactionCount;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblAmount;
+        private System.Windows.Forms.Label lblTransType;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
     }
 }
 

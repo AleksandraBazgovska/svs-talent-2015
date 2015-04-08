@@ -63,7 +63,7 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             this.ID = id;
             this.Number = number;
             this.Currency = currency;
-            this.Balance = new Common.CurrencyAmount(10000,currency);
+            this.Balance = new CurrencyAmount(10000,currency);
         }
         /// <summary>
         /// Definiranje na konstruktor so eden parametar pri shto se povikuva drug konstruktor od istava klasa so this

@@ -197,6 +197,28 @@ namespace CSharpProgrammingBasicsTransactionApp
             return loan;
         }
 
+        /// <summary>
+        /// Metod za kreiranje na Deposit Account
+        /// </summary>
+        /// <returns></returns>
+        private IDepositAccount CreateDepositAccount()
+        {
+            UnitOfTime myTime;
+            Enum.TryParse(comboBox1.SelectedItem.ToString(), out myTime);
+
+            //Konverzija na enum vo string za Interest svojstvoto 
+            UnitOfTime myInterest;
+            Enum.TryParse(comboBox2.SelectedItem.ToString(), out myInterest);
+
+            //Kretiranje na Transaction Account
+            ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
+            IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new CSharpProgrammingBasics.Classes.Common.TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
+                new CSharpProgrammingBasics.Classes.Common.InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
+
+
+            return deposit;
+        }
+
         //Pomoshen metod za kreiranje na instanca od TransactionAccount
         private  ITransactionAccount CreateTransactionAccount()
         {
@@ -233,7 +255,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             IDepositAccount deposit = new DepositAccount("MKD", timePeriod, interestRate, DateTime.Now, DateTime.Now, transaction);
 
             //Keriranje na instanca od tip TransactionProcessor
-            ITransactionProcessor transferProcessor = new TransactionProcessor();
+            ITransactionProcessor transferProcessor = TransactionProcessor.GetTransactionProcessor();
 
             //Izvrshuvanje na transfer na pari od edna smetka na druga I primer
             //CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
@@ -255,7 +277,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             ILoanAccount loan = CreateLoanAccount(); //Kreiranje na instanca od LoanAccount so pomosh na veke gotov metod
             ITransactionAccount transAccount = CreateTransactionAccount(); //Kreiranje na instanca od TransactionAccount so pomosh na veke gotov metod
             CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
-            transferProcessor.processTransaction(TransactionType.Transfer, amount, transAccount, loan);
+            transferProcessor.ProcessTransaction(TransactionType.Transfer, amount, transAccount, loan);
 
             accountCommonLabel(transAccount);
             CheckDepositAccount(transAccount);
@@ -264,6 +286,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             accountCommonLabelSecond(loan);
             CheckDepositAccountSecond(loan);
             CheckTransactionAccountSecond(loan);
+
 
 
             //Transfer from ILoanAccount to IDepositAccount III primer
@@ -312,6 +335,61 @@ namespace CSharpProgrammingBasicsTransactionApp
             accountCommonLabel(deposit);
             CheckDepositAccount(deposit);
             CheckTransactionAccount(deposit);
+        }
+
+
+        /// <summary>
+        /// Ovoj metod ovozmozuva na klik na kopcheto MakeGroupTransaction da se napravi grupna transakcija an poveke smetki odednash
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnMakeGroupTransaction_Click(object sender, EventArgs e)
+        {
+            IAccount[] accountArray = new Account[2];
+            IDepositAccount deposit = CreateDepositAccount();
+            ILoanAccount loan = CreateLoanAccount();
+            accountArray[0] = deposit;
+            accountArray[1] = loan;
+
+            ITransactionProcessor transProcessor = TransactionProcessor.GetTransactionProcessor();
+
+            transProcessor.ProccessGroupTransaction(TransactionType.Debit, new CurrencyAmount(25000, "MKD"), accountArray);
+
+            accountCommonLabel(deposit);
+            CheckDepositAccount(deposit);
+            CheckTransactionAccount(deposit);
+
+            accountCommonLabelSecond(loan);
+            CheckDepositAccountSecond(loan);
+            CheckTransactionAccountSecond(loan);
+
+            lblTotalTransactionCount.Text = transProcessor.TransactionCount.ToString();
+
+            DisplayLastTransactionDetails();
+
+            //TODO Potrebno e refaktoriranje so cel da se povika null array, i array inicijalizirana so null vrednosti
+
+
+
+        }
+
+        private void transactionLogEntryLabel(TransactionLogEntry account)
+        {
+            lblTransType.Text = account.TransactionType.ToString();
+            lblAmount.Text = account.Amount.Amount.ToString() + account.Amount.Currency.ToString();
+            lblStatus.Text = account.Status.ToString();
+
+
+        }
+
+        private void DisplayLastTransactionDetails()
+        {
+            ITransactionProcessor transProcessor = TransactionProcessor.GetTransactionProcessor();
+            TransactionLogEntry lastLog = transProcessor.LastTransaction;
+
+            transactionLogEntryLabel(lastLog);
+
+
         }
     }
 }
