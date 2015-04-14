@@ -30,6 +30,6 @@ namespace CSharpProgrammingBasics.Classes.Interfaces
 
          Common.TransactionStatus CreditAmount(Common.CurrencyAmount amount);
 
-         event BalanceChanged OnBalanceChanged;
+        event EventHandler<BalanceChangedEventArguments> BalanceChanged;
     }
 }

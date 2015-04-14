@@ -5,7 +5,7 @@ public delegate void TransactionLogger(IAccount account, TransactionType transac
 
 public class BalanceChangedEventArguments : System.EventArgs
 {
-    public IAccount Account { get;  private set; }
+    public IAccount Account { get;  set; }
     public  CurrencyAmount Change { get; set; }
 
     public BalanceChangedEventArguments(IAccount account,CurrencyAmount change)
@@ -14,7 +14,12 @@ public class BalanceChangedEventArguments : System.EventArgs
         this.Change = change;
     }
 
+    public BalanceChangedEventArguments()
+    {
+
+    }
+
 }
 
 
-public delegate void BalanceChanged(object sender, BalanceChangedEventArguments eventArgs);
+public delegate void BalanceChangedEventHandler(object sender, BalanceChangedEventArguments eventArgs);

@@ -51,6 +51,12 @@ namespace CSharpProgrammingBasics.Classes.Helpers
                 return "";
         }
 
+        /// <summary>
+        /// Generichki metod za generiranje na AccountNumber
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="accountID"></param>
+        /// <returns></returns>
         public static string GenerateAccountNumber<T>(long accountID) where T : IAccount
         {
             Type typeParametar = typeof(T);

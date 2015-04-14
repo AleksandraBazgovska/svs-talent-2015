@@ -18,3 +18,8 @@ C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\Lab02\CS
 C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.dll
 C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.pdb
 C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\bin\Debug\CSharpProgrammingBasicsClasses.dll
+C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\bin\Debug\CSharpProgrammingBasicsClasses.pdb
+C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.dll
+C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\Lab02\CSharpProgrammingBasicsClasses\obj\Debug\CSharpProgrammingBasicsClasses.pdb

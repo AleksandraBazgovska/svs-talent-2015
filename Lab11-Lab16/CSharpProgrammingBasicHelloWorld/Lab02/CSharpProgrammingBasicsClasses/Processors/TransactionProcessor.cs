@@ -202,7 +202,8 @@ namespace CSharpProgrammingBasics.Classes.Processors
 
                     else
                     {
-                        LogTransaction(transactionType, amount, accounts, TransactionStatus.Failed);
+                        Console.WriteLine("Site transakcii ne pominale uspeshno");
+                        LogTransaction(transactionType, amount, accounts, TransactionStatus.CompletedWithWarning);
                         return TransactionStatus.Failed;
                     }
                 }
@@ -232,7 +233,7 @@ namespace CSharpProgrammingBasics.Classes.Processors
 
                     else
                     {
-                        LogTransaction(transactionType, amount, accounts, TransactionStatus.Failed);
+                        LogTransaction(transactionType, amount, accounts, TransactionStatus.CompletedWithWarning);
                         return TransactionStatus.Failed;
                     }
                 }

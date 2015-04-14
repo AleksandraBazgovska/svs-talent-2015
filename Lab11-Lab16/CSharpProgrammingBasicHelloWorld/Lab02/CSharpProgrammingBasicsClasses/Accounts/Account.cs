@@ -21,9 +21,12 @@ namespace CSharpProgrammingBasics.Classes.Accounts
         public string m_Currency;
         public CurrencyAmount m_Balance;
 
-        public event BalanceChanged OnBalanceChanged;
+        public event EventHandler<BalanceChangedEventArguments> BalanceChanged;
 
-      
+
+
+
+
 
         /// <summary>
         /// Definiranje na svojstva za gorenavedenite fields
@@ -52,16 +55,17 @@ namespace CSharpProgrammingBasics.Classes.Accounts
         {
             get { return m_Balance; }
             set {
+             
 
-                CurrencyAmount temp = new CurrencyAmount (m_Balance.Amount,m_Balance.Currency); // old value 
-                m_Balance = value; // new value
-
-                if (m_Balance.Amount != temp.Amount)
+                if (value.Amount != m_Balance.Amount)
                 {
-                    if(OnBalanceChanged!=null)
-                    {
-                        OnBalanceChanged(this, new BalanceChangedEventArguments(this,value));
-                    }
+                    m_Balance = value;
+                    BalanceChangedEventArguments args = new BalanceChangedEventArguments();
+                    args.Account =this;
+                    args.Change = new CurrencyAmount(m_Balance.Amount, m_Balance.Currency);
+                   
+                    OnBalanceChange(args);
+
                 }
 
                 
@@ -92,6 +96,20 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             this.Currency = currency;
             this.ID = AccountHelper.GenerateAccountId();
             this.Number = GenerateAccountNumber();
+        }
+
+
+        /// <summary>
+        /// protected method OnBalanceChange koj proveruva dali e inicijaliziran eventot, ako ne e go povikuva so (this,e) kade (e) e instanca od custom klasata koja nasleduva od EventArgs
+        /// </summary>
+        /// <param name="e"></param>
+        protected virtual void OnBalanceChange(BalanceChangedEventArguments e)
+        {
+         
+            if(BalanceChanged != null)
+            {
+                BalanceChanged(this, e);
+            }
         }
 
         /// <summary>

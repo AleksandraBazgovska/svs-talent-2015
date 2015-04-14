@@ -39,11 +39,11 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
             this.lblTransType = new System.Windows.Forms.Label();
+            this.lblTotalTransactionCount = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.lblTotalTransactionCount = new System.Windows.Forms.Label();
             this.btnMakeGroupTransaction = new System.Windows.Forms.Button();
             this.btnMakeTransaction = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -141,7 +141,7 @@
             this.Transsaction.Controls.Add(this.groupBox1);
             this.Transsaction.Location = new System.Drawing.Point(12, 12);
             this.Transsaction.Name = "Transsaction";
-            this.Transsaction.Size = new System.Drawing.Size(983, 420);
+            this.Transsaction.Size = new System.Drawing.Size(1019, 420);
             this.Transsaction.TabIndex = 2;
             this.Transsaction.TabStop = false;
             // 
@@ -212,7 +212,7 @@
             this.groupBox11.Controls.Add(this.label31);
             this.groupBox11.Location = new System.Drawing.Point(793, 20);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(190, 140);
+            this.groupBox11.Size = new System.Drawing.Size(217, 140);
             this.groupBox11.TabIndex = 17;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Transaction Log Entry Details";
@@ -240,6 +240,14 @@
             this.lblTransType.Name = "lblTransType";
             this.lblTransType.Size = new System.Drawing.Size(0, 13);
             this.lblTransType.TabIndex = 24;
+            // 
+            // lblTotalTransactionCount
+            // 
+            this.lblTotalTransactionCount.AutoSize = true;
+            this.lblTotalTransactionCount.Location = new System.Drawing.Point(143, 118);
+            this.lblTotalTransactionCount.Name = "lblTotalTransactionCount";
+            this.lblTotalTransactionCount.Size = new System.Drawing.Size(0, 13);
+            this.lblTotalTransactionCount.TabIndex = 16;
             // 
             // label11
             // 
@@ -276,14 +284,6 @@
             this.label31.Size = new System.Drawing.Size(90, 13);
             this.label31.TabIndex = 17;
             this.label31.Text = "Transaction Type";
-            // 
-            // lblTotalTransactionCount
-            // 
-            this.lblTotalTransactionCount.AutoSize = true;
-            this.lblTotalTransactionCount.Location = new System.Drawing.Point(143, 118);
-            this.lblTotalTransactionCount.Name = "lblTotalTransactionCount";
-            this.lblTotalTransactionCount.Size = new System.Drawing.Size(0, 13);
-            this.lblTotalTransactionCount.TabIndex = 16;
             // 
             // btnMakeGroupTransaction
             // 
@@ -944,7 +944,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 438);
+            this.ClientSize = new System.Drawing.Size(1034, 441);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Transsaction);
             this.Name = "frmMain";

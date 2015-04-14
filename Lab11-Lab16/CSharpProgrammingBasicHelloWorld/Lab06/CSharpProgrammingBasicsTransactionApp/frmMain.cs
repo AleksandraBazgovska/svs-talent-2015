@@ -176,7 +176,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             UnitOfTime myTime;
             Enum.TryParse(comboBox1.SelectedItem.ToString(), out myTime);
 
-            //KOnverzija na enum vo string za Interest svojstvoto 
+            //Konverzija na enum vo string za Interest svojstvoto 
             UnitOfTime myInterest;
             Enum.TryParse(comboBox2.SelectedItem.ToString(), out myInterest);
 
@@ -186,7 +186,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
                 new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
 
-            deposit.OnBalanceChanged += new BalanceChanged(OnBalanceChange_Handler);
+            deposit.BalanceChanged += OnBalanceChange_Handler;
             CheckDepositAccount(deposit);
             CheckTransactionAccount(deposit);
 
@@ -208,8 +208,8 @@ namespace CSharpProgrammingBasicsTransactionApp
 
             //Kretiranje na Transaction Account
             ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
-            LoanAccount loan = new LoanAccount(txtCurrency.Text, new CSharpProgrammingBasics.Classes.Common.TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
-                new CSharpProgrammingBasics.Classes.Common.InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
+            LoanAccount loan = new LoanAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
+                new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
 
 
             return loan;
@@ -230,8 +230,8 @@ namespace CSharpProgrammingBasicsTransactionApp
 
             //Kretiranje na Transaction Account
             ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
-            IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new CSharpProgrammingBasics.Classes.Common.TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
-                new CSharpProgrammingBasics.Classes.Common.InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
+            IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
+                new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
 
             
 
@@ -279,6 +279,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             ITransactionProcessor transferProcessor = TransactionProcessor.GetTransactionProcessor();
 
             //Izvrshuvanje na transfer na pari od edna smetka na druga I primer
+
             //CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
             //transferProcessor.processTransaction(TransactionType.Transfer, amount, transaction, deposit);
 
@@ -290,7 +291,11 @@ namespace CSharpProgrammingBasicsTransactionApp
             //CheckDepositAccountSecond(deposit);
             //CheckTransactionAccountSecond(deposit);
 
-            //CheckTransactionAccountSecond(deposit.TransactionAccount);
+
+            //Za poednostavuvanje na detalite za prikaz
+
+           // ShowTransactionDetails(transaction, deposit);
+
 
 
             //Transfer from ITransactionaccount to ILoanAccount II primer
@@ -329,20 +334,22 @@ namespace CSharpProgrammingBasicsTransactionApp
                 }
             }
 
-#endregion 
-            accountCommonLabel(transAccount);
-            CheckDepositAccount(transAccount);
-            CheckTransactionAccount(transAccount);
+            #endregion
+            //accountCommonLabel(transAccount);
+            //CheckDepositAccount(transAccount);
+            //CheckTransactionAccount(transAccount);
 
-            accountCommonLabelSecond(loan);
-            CheckDepositAccountSecond(loan);
-            CheckTransactionAccountSecond(loan);
+            //accountCommonLabelSecond(loan);
+            //CheckDepositAccountSecond(loan);
+            //CheckTransactionAccountSecond(loan);
+
+            ShowTransactionDetails(transAccount, loan);
 
             lblTotalTransactionCount.Text = transferProcessor.TransactionCount.ToString();
 
             DisplayLastTransactionDetails();
-            loan.OnBalanceChanged += new BalanceChanged(OnBalanceChange_Handler);
-            transAccount.OnBalanceChanged += new BalanceChanged(OnBalanceChange_Handler);
+           // loan.BalanceChanged += new BalanceChangedEventHandler(OnBalanceChange_Handler);
+            ///transAccount.BalanceChanged += new BalanceChangedEventHandler(OnBalanceChange_Handler);
 
             //Transfer from ILoanAccount to IDepositAccount III primer
             //transferProcessor.processTransaction(TransactionType.Transfer,amount,loan,transaction);
@@ -353,9 +360,25 @@ namespace CSharpProgrammingBasicsTransactionApp
             //accountCommonLabelSecond(transaction);
             //CheckDepositAccountSecond(transaction);
             //CheckTransactionAccountSecond(transaction);
+
+            // ShowTransactionDetails(loan, transaction);
         }
 
+        /// <summary>
+        /// Metod koj go poednostavuva prikazot na detali za transakcijata od accountFrom to accountTo
+        /// </summary>
+        /// <param name="account1"></param>
+        /// <param name="account2"></param>
+        private void ShowTransactionDetails(IAccount account1, IAccount account2)
+        {
+            accountCommonLabel(account1);
+            CheckDepositAccount(account1);
+            CheckTransactionAccount(account1);
 
+            accountCommonLabelSecond(account2);
+            CheckDepositAccountSecond(account2);
+            CheckTransactionAccountSecond(account2);
+        }
         /// <summary>
         /// Metodite se definirani po vtor pat zatoa shto ne rabotea prethodno 
         /// </summary>
@@ -413,19 +436,21 @@ namespace CSharpProgrammingBasicsTransactionApp
 
             transProcessor.ProcessGroupTransaction(TransactionType.Debit, new CurrencyAmount(25000, "MKD"), accountArray);
 
-            accountCommonLabel(deposit);
-            CheckDepositAccount(deposit);
-            CheckTransactionAccount(deposit);
+            //accountCommonLabel(deposit);
+            //CheckDepositAccount(deposit);
+            //CheckTransactionAccount(deposit);
 
-            accountCommonLabelSecond(loan);
-            CheckDepositAccountSecond(loan);
-            CheckTransactionAccountSecond(loan);
+            //accountCommonLabelSecond(loan);
+            //CheckDepositAccountSecond(loan);
+            //CheckTransactionAccountSecond(loan);
+
+            ShowTransactionDetails(deposit, loan); //Prikaz na detali na poednostaven nachin 
 
             lblTotalTransactionCount.Text = transProcessor.TransactionCount.ToString();
 
             DisplayLastTransactionDetails();
 
-            deposit.OnBalanceChanged += new BalanceChanged(OnBalanceChange_Handler);
+            //deposit.BalanceChanged += OnBalanceChange_Handler;
 
 
 
@@ -473,6 +498,7 @@ namespace CSharpProgrammingBasicsTransactionApp
         {
 
             Console.WriteLine("Details for the Account " + eventArgs.Account.ToString() + " Change " + eventArgs.Change.Amount + " " + eventArgs.Change.Currency);
+            Environment.Exit(0);
         }
 
 
@@ -528,13 +554,16 @@ namespace CSharpProgrammingBasicsTransactionApp
 
             proces.ChargeProcessingFee(new CurrencyAmount(15, "MKD"), accounts);
 
-            accountCommonLabel(deposit);
-            CheckDepositAccount(deposit);
-            CheckTransactionAccount(deposit);
+            //accountCommonLabel(deposit);
+            //CheckDepositAccount(deposit);
+            //CheckTransactionAccount(deposit);
 
-            accountCommonLabelSecond(loan);
-            CheckDepositAccountSecond(loan);
-            CheckTransactionAccountSecond(loan);
+            //accountCommonLabelSecond(loan);
+            //CheckDepositAccountSecond(loan);
+            //CheckTransactionAccountSecond(loan);
+
+            ShowTransactionDetails(deposit, loan);
+            lblTotalTransactionCount.Text = proces.TransactionCount.ToString();
 
             DisplayLastTransactionDetails();
 
