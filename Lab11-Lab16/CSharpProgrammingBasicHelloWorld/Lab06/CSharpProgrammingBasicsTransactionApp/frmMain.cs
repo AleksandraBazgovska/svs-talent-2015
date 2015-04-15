@@ -172,21 +172,11 @@ namespace CSharpProgrammingBasicsTransactionApp
         /// <param name="e"></param>
         private void btnCreateDepositAccount_Click(object sender, EventArgs e)
         {
-            //Konverzija na enum vo string za Period svojstvoto 
-            UnitOfTime myTime;
-            Enum.TryParse(comboBox1.SelectedItem.ToString(), out myTime);
+           IDepositAccount deposit = CreateDepositAccount();
 
-            //Konverzija na enum vo string za Interest svojstvoto 
-            UnitOfTime myInterest;
-            Enum.TryParse(comboBox2.SelectedItem.ToString(), out myInterest);
+            //deposit.BalanceChanged += OnBalanceChange_Handler;
+           
 
-            //Kretiranje na Transaction Account
-            ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
-
-            IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
-                new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
-
-            deposit.BalanceChanged += OnBalanceChange_Handler;
             CheckDepositAccount(deposit);
             CheckTransactionAccount(deposit);
 
@@ -233,7 +223,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
                 new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
 
-            
+
 
 
             return deposit;
@@ -283,15 +273,6 @@ namespace CSharpProgrammingBasicsTransactionApp
             //CurrencyAmount amount = new CurrencyAmount(20000, "MKD");
             //transferProcessor.processTransaction(TransactionType.Transfer, amount, transaction, deposit);
 
-            //accountCommonLabel(transaction);
-            //CheckDepositAccount(transaction);
-            //CheckTransactionAccount(transaction);
-
-            //accountCommonLabelSecond(deposit);
-            //CheckDepositAccountSecond(deposit);
-            //CheckTransactionAccountSecond(deposit);
-
-
             //Za poednostavuvanje na detalite za prikaz
 
            // ShowTransactionDetails(transaction, deposit);
@@ -335,14 +316,7 @@ namespace CSharpProgrammingBasicsTransactionApp
             }
 
             #endregion
-            //accountCommonLabel(transAccount);
-            //CheckDepositAccount(transAccount);
-            //CheckTransactionAccount(transAccount);
-
-            //accountCommonLabelSecond(loan);
-            //CheckDepositAccountSecond(loan);
-            //CheckTransactionAccountSecond(loan);
-
+           
             ShowTransactionDetails(transAccount, loan);
 
             lblTotalTransactionCount.Text = transferProcessor.TransactionCount.ToString();
@@ -353,13 +327,7 @@ namespace CSharpProgrammingBasicsTransactionApp
 
             //Transfer from ILoanAccount to IDepositAccount III primer
             //transferProcessor.processTransaction(TransactionType.Transfer,amount,loan,transaction);
-            //accountCommonLabel(loan);
-            //CheckDepositAccount(loan);
-            //CheckTransactionAccount(loan);
-
-            //accountCommonLabelSecond(transaction);
-            //CheckDepositAccountSecond(transaction);
-            //CheckTransactionAccountSecond(transaction);
+            
 
             // ShowTransactionDetails(loan, transaction);
         }
@@ -395,21 +363,9 @@ namespace CSharpProgrammingBasicsTransactionApp
 
         private void btnCreateDepositAccount_Click_1(object sender, EventArgs e)
         {
-            //Konverzija na enum vo string za Period svojstvoto 
-            UnitOfTime myTime;
-            Enum.TryParse(comboBox1.SelectedItem.ToString(), out myTime);
+             IDepositAccount deposit = CreateDepositAccount();
 
-            //KOnverzija na enum vo string za Interest svojstvoto 
-            UnitOfTime myInterest;
-            Enum.TryParse(comboBox2.SelectedItem.ToString(), out myInterest);
-
-            //Kretiranje na Transaction Account
-            ITransactionAccount trans = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
-
-            IDepositAccount deposit = new DepositAccount(txtCurrency.Text, new TimePeriod(Convert.ToInt32(txtPeriod.Text), myTime),
-                new InterestRate(Convert.ToDecimal(txtPercent.Text), myInterest), dateTimePicker1.Value, dateTimePicker2.Value, trans);
-
-
+            deposit.BalanceChanged += OnBalanceChange_Handler;
             accountCommonLabel(deposit);
             CheckDepositAccount(deposit);
             CheckTransactionAccount(deposit);
@@ -436,14 +392,7 @@ namespace CSharpProgrammingBasicsTransactionApp
 
             transProcessor.ProcessGroupTransaction(TransactionType.Debit, new CurrencyAmount(25000, "MKD"), accountArray);
 
-            //accountCommonLabel(deposit);
-            //CheckDepositAccount(deposit);
-            //CheckTransactionAccount(deposit);
-
-            //accountCommonLabelSecond(loan);
-            //CheckDepositAccountSecond(loan);
-            //CheckTransactionAccountSecond(loan);
-
+            
             ShowTransactionDetails(deposit, loan); //Prikaz na detali na poednostaven nachin 
 
             lblTotalTransactionCount.Text = transProcessor.TransactionCount.ToString();
@@ -494,11 +443,11 @@ namespace CSharpProgrammingBasicsTransactionApp
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="eventArgs"></param>
-        public void OnBalanceChange_Handler(object sender, BalanceChangedEventArguments eventArgs)
+        private static void OnBalanceChange_Handler(object sender, BalanceChangedEventArguments eventArgs)
         {
 
             Console.WriteLine("Details for the Account " + eventArgs.Account.ToString() + " Change " + eventArgs.Change.Amount + " " + eventArgs.Change.Currency);
-            Environment.Exit(0);
+            //Environment.Exit(0);
         }
 
 
@@ -553,14 +502,6 @@ namespace CSharpProgrammingBasicsTransactionApp
 
 
             proces.ChargeProcessingFee(new CurrencyAmount(15, "MKD"), accounts);
-
-            //accountCommonLabel(deposit);
-            //CheckDepositAccount(deposit);
-            //CheckTransactionAccount(deposit);
-
-            //accountCommonLabelSecond(loan);
-            //CheckDepositAccountSecond(loan);
-            //CheckTransactionAccountSecond(loan);
 
             ShowTransactionDetails(deposit, loan);
             lblTotalTransactionCount.Text = proces.TransactionCount.ToString();

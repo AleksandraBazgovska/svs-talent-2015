@@ -21,7 +21,7 @@ namespace CSharpProgrammingBasics.Classes.Accounts
         public string m_Currency;
         public CurrencyAmount m_Balance;
 
-        public event EventHandler<BalanceChangedEventArguments> BalanceChanged;
+        public event EventHandler<BalanceChangedEventArguments> BalanceChanged = delegate { };
 
 
 
@@ -108,7 +108,7 @@ namespace CSharpProgrammingBasics.Classes.Accounts
          
             if(BalanceChanged != null)
             {
-                BalanceChanged(this, e);
+                BalanceChanged(this,e);
             }
         }
 
