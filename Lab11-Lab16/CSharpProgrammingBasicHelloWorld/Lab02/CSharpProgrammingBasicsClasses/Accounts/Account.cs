@@ -23,11 +23,6 @@ namespace CSharpProgrammingBasics.Classes.Accounts
 
         public event EventHandler<BalanceChangedEventArguments> BalanceChanged = delegate { };
 
-
-
-
-
-
         /// <summary>
         /// Definiranje na svojstva za gorenavedenite fields
         /// </summary>
@@ -63,8 +58,9 @@ namespace CSharpProgrammingBasics.Classes.Accounts
                     BalanceChangedEventArguments args = new BalanceChangedEventArguments();
                     args.Account =this;
                     args.Change = new CurrencyAmount(m_Balance.Amount, m_Balance.Currency);
-                   
+                    BalanceChanged += new EventHandler<BalanceChangedEventArguments>(OnBalanceChange_Handler);
                     OnBalanceChange(args);
+
 
                 }
 
@@ -109,7 +105,15 @@ namespace CSharpProgrammingBasics.Classes.Accounts
             if(BalanceChanged != null)
             {
                 BalanceChanged(this,e);
+                BalanceChanged.Invoke(this, e);
             }
+        }
+
+        private static void OnBalanceChange_Handler(object sender, BalanceChangedEventArguments eventArgs)
+        {
+
+            Console.WriteLine("Details for the Account " + eventArgs.Account.ToString() + " Change " + eventArgs.Change.Amount + " " + eventArgs.Change.Currency);
+            //Environment.Exit(0);
         }
 
         /// <summary>

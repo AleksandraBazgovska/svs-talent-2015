@@ -30,3 +30,6 @@ C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\CSharpPr
 C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.csprojResolveAssemblyReference.cache
 C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.exe
 C:\Users\Aleksandra\Desktop\New folder\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\bin\Debug\CSharpProgrammingBasicHelloWorld.exe.config
+C:\Users\code\Desktop\Alek\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.exe
+C:\Users\code\Desktop\Alek\svs-talent-2015\Lab11-Lab16\CSharpProgrammingBasicHelloWorld\CSharpProgrammingBasicHelloWorld\obj\Debug\CSharpProgrammingBasicHelloWorld.pdb

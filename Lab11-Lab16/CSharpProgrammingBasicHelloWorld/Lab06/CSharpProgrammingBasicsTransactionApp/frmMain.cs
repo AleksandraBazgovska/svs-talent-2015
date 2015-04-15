@@ -365,7 +365,7 @@ namespace CSharpProgrammingBasicsTransactionApp
         {
              IDepositAccount deposit = CreateDepositAccount();
 
-            deposit.BalanceChanged += OnBalanceChange_Handler;
+           
             accountCommonLabel(deposit);
             CheckDepositAccount(deposit);
             CheckTransactionAccount(deposit);
@@ -443,12 +443,7 @@ namespace CSharpProgrammingBasicsTransactionApp
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="eventArgs"></param>
-        private static void OnBalanceChange_Handler(object sender, BalanceChangedEventArguments eventArgs)
-        {
-
-            Console.WriteLine("Details for the Account " + eventArgs.Account.ToString() + " Change " + eventArgs.Change.Amount + " " + eventArgs.Change.Currency);
-            //Environment.Exit(0);
-        }
+       
 
 
         /// <summary>
