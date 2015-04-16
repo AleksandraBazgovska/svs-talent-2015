@@ -1,0 +1,6 @@
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_LSP\SOLID_LSP\bin\Debug\SOLID_LSP.exe.config
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_LSP\SOLID_LSP\bin\Debug\SOLID_LSP.exe
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_LSP\SOLID_LSP\bin\Debug\SOLID_LSP.pdb
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_LSP\SOLID_LSP\obj\Debug\SOLID_LSP.csprojResolveAssemblyReference.cache
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_LSP\SOLID_LSP\obj\Debug\SOLID_LSP.exe
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_LSP\SOLID_LSP\obj\Debug\SOLID_LSP.pdb

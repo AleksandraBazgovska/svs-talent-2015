@@ -1,0 +1,6 @@
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_OPEN_CLOSE_PRINCIPE\SOLID_OPEN_CLOSE_PRINCIPE\bin\Debug\SOLID_OPEN_CLOSE_PRINCIPE.exe.config
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_OPEN_CLOSE_PRINCIPE\SOLID_OPEN_CLOSE_PRINCIPE\bin\Debug\SOLID_OPEN_CLOSE_PRINCIPE.exe
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_OPEN_CLOSE_PRINCIPE\SOLID_OPEN_CLOSE_PRINCIPE\bin\Debug\SOLID_OPEN_CLOSE_PRINCIPE.pdb
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_OPEN_CLOSE_PRINCIPE\SOLID_OPEN_CLOSE_PRINCIPE\obj\Debug\SOLID_OPEN_CLOSE_PRINCIPE.csprojResolveAssemblyReference.cache
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_OPEN_CLOSE_PRINCIPE\SOLID_OPEN_CLOSE_PRINCIPE\obj\Debug\SOLID_OPEN_CLOSE_PRINCIPE.exe
+c:\users\aleksandra\documents\visual studio 2015\Projects\SOLID_OPEN_CLOSE_PRINCIPE\SOLID_OPEN_CLOSE_PRINCIPE\obj\Debug\SOLID_OPEN_CLOSE_PRINCIPE.pdb

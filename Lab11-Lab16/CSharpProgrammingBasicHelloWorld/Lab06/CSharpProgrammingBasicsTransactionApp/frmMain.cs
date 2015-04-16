@@ -354,7 +354,7 @@ namespace CSharpProgrammingBasicsTransactionApp
         /// <param name="e"></param>
         private void btnCreateTransactionAccount_Click_1(object sender, EventArgs e)
         {
-            ITransactionAccount transAccount = new TransactionAccount(txtCurrency.Text, Convert.ToDecimal(txtLimit.Text));
+            ITransactionAccount transAccount = CreateTransactionAccount();
             accountCommonLabel(transAccount);
             CheckDepositAccount(transAccount);
             CheckTransactionAccount(transAccount);
@@ -363,9 +363,7 @@ namespace CSharpProgrammingBasicsTransactionApp
 
         private void btnCreateDepositAccount_Click_1(object sender, EventArgs e)
         {
-             IDepositAccount deposit = CreateDepositAccount();
-
-           
+             IDepositAccount deposit = CreateDepositAccount();           
             accountCommonLabel(deposit);
             CheckDepositAccount(deposit);
             CheckTransactionAccount(deposit);
