@@ -1,0 +1,33 @@
+D:\WorkingProjects\GitHub\svs-talent-2015\04-SPA\Project\Registar\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.csprojResolveAssemblyReference.cache
+D:\WorkingProjects\GitHub\svs-talent-2015\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.dll
+D:\WorkingProjects\GitHub\svs-talent-2015\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.pdb
+D:\WorkingProjects\GitHub\svs-talent-2015\04-SPA\Project\Registar\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.dll
+D:\WorkingProjects\GitHub\svs-talent-2015\04-SPA\Project\Registar\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.pdb
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.dll.config
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.dll
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.pdb
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.DataLayer.dll
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.DomainModel.dll
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.DataLayer.pdb
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\Registar.DomainModel.pdb
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.dll
+C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.pdb
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.dll.config
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.dll
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\Registar.BusinessLayer.pdb
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\Registar.DataLayer.dll
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\Registar.DomainModel.dll
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\Registar.DataLayer.pdb
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\Registar.DomainModel.pdb
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.dll
+C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.BusinessLayer\obj\Debug\Registar.BusinessLayer.pdb
