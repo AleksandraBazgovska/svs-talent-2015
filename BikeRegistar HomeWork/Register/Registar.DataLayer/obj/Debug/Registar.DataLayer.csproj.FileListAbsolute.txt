@@ -10,3 +10,15 @@ C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Pr
 C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.DataLayer\obj\Debug\Registar.DataLayer.csprojResolveAssemblyReference.cache
 C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.DataLayer\obj\Debug\Registar.DataLayer.dll
 C:\Users\Aleksandra\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.DataLayer\obj\Debug\Registar.DataLayer.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DataLayer.dll.config
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DataLayer.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DataLayer.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DomainModel.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DomainModel.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\obj\Debug\Registar.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\obj\Debug\Registar.DataLayer.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\obj\Debug\Registar.DataLayer.pdb

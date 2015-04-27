@@ -16,3 +16,15 @@ C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.Doma
 C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.DomainModel\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.dll
 C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Registar.DomainModel.dll.config
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Registar.DomainModel.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Registar.DomainModel.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.csprojResolveAssemblyReference.cache
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Reristar.Common.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Reristar.Common.pdb

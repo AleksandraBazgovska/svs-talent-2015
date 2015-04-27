@@ -1,0 +1,5 @@
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Reristar.Common\obj\Debug\Reristar.Common.csprojResolveAssemblyReference.cache
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Reristar.Common\bin\Debug\Reristar.Common.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Reristar.Common\bin\Debug\Reristar.Common.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Reristar.Common\obj\Debug\Reristar.Common.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Reristar.Common\obj\Debug\Reristar.Common.pdb

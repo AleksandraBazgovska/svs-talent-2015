@@ -56,18 +56,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Registar.DataLayer\Registar.DataLayer.csproj">
-      <Project>{d46d8021-023f-49ef-b782-266b66bef3f1}</Project>
-      <Name>Registar.DataLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Registar.DomainModel\Registar.DomainModel.csproj">
-      <Project>{73bb7875-ce89-4c1f-85a7-9168ad4970dc}</Project>
-      <Name>Registar.DomainModel</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Registar.DomainModel\Registar.DomainModel.csproj">
+      <Project>{A9F36D3F-32A5-4D87-B4BD-F3832E5EE23D}</Project>
+      <Name>Registar.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REgistar.Repository\Registar.Repository.csproj">
+      <Project>{d9a97c13-a555-40d8-ad95-7c0117267ba5}</Project>
+      <Name>Registar.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reristar.Common\Reristar.Common.csproj">
+      <Project>{d6842129-31d4-4d2a-ae73-46285d1a7fd5}</Project>
+      <Name>Reristar.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -27,3 +27,35 @@ C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar\bin\
 C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar\bin\System.Web.Mvc.xml
 C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar\obj\Debug\Registar.dll
 C:\Users\Aleksandra\Documents\Visual Studio 2015\Projects\Register\Registar\obj\Debug\Registar.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.dll.config
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\EntityFramework.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\EntityFramework.SqlServer.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.BusinessLayer.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.DomainModel.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Helpers.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Mvc.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Razor.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Webpages.Deployment.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Webpages.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Webpages.Razor.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.DataLayer.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.BusinessLayer.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.DomainModel.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\EntityFramework.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\EntityFramework.SqlServer.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Razor.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Webpages.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Webpages.Deployment.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Webpages.Razor.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Helpers.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\System.Web.Mvc.xml
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Registar.DataLayer.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\obj\Debug\Registar.csprojResolveAssemblyReference.cache
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\obj\Debug\Registar.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\obj\Debug\Registar.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\REgistar.Repository.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Reristar.Common.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\REgistar.Repository.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar\bin\Reristar.Common.pdb

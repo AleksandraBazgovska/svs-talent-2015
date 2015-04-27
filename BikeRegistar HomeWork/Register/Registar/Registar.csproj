@@ -130,17 +130,25 @@
     <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Desktop\Master_Branch_OBUKA\svs-talent-2015-master\04-SPA\Project\Registar\Registar.DataLayer\Registar.DataLayer.csproj">
-      <Project>{d46d8021-023f-49ef-b782-266b66bef3f1}</Project>
-      <Name>Registar.DataLayer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Registar.BusinessLayer\Registar.BusinessLayer.csproj">
       <Project>{3e2141c8-6ed8-4a7a-8d50-a872fe4c77cd}</Project>
       <Name>Registar.BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Registar.DataLayer\Registar.DataLayer.csproj">
+      <Project>{d46d8021-023f-49ef-b782-266b66bef3f1}</Project>
+      <Name>Registar.DataLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Registar.DomainModel\Registar.DomainModel.csproj">
       <Project>{a9f36d3f-32a5-4d87-b4bd-f3832e5ee23d}</Project>
       <Name>Registar.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REgistar.Repository\Registar.Repository.csproj">
+      <Project>{d9a97c13-a555-40d8-ad95-7c0117267ba5}</Project>
+      <Name>Registar.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reristar.Common\Reristar.Common.csproj">
+      <Project>{d6842129-31d4-4d2a-ae73-46285d1a7fd5}</Project>
+      <Name>Reristar.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

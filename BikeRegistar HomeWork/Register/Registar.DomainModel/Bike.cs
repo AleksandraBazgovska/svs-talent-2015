@@ -31,15 +31,7 @@ namespace Registar.DomainModel
 
         public string ImageUrl { get; set; }
 
-        //[NotMapped]
-        //public object IgnoreMe { get; set; }
-
-        //[NotMapped]
-        //[Timestamp]
-        //public byte[] TimeStamp { get; set; }
-
-
-        //public IEnumerable<BikeHistory> History { get; set; } 
+        
     }
 
     public class BikeHistory
