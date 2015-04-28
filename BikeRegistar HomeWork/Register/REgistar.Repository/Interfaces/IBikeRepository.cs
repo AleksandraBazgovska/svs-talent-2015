@@ -10,6 +10,7 @@ namespace Registar.Repository.Interfaces
 {
    public interface IBikeRepository : IRepository
     {
-        IList<Bike> SearchBikes();
+        //metod koj vrakja lista od prebaranite tocaci od baza
+        IList<Bike> SearchBikes(); 
     }
 }

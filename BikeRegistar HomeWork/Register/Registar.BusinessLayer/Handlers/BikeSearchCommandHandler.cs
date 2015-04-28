@@ -17,11 +17,11 @@ namespace Registar.BusinessLayer.Handlers
 
         protected override BikeSearchResult ExecuteCommand(BikeSearchCommand command)
         {
-            IBikeRepository repo = RepositoryManager.CreateRepository<IBikeRepository>();
+            IBikeRepository repo = RepositoryManager.CreateRepository<IBikeRepository>(); //RepositoryManager kreira repository od tip IBikeRepository
 
             BikeSearchResult result = new BikeSearchResult();
             result.Result = repo.SearchBikes() as List<Bike>;
-            //
+            // //
             return result;          
 
         }

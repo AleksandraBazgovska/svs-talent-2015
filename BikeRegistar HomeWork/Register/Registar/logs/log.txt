@@ -1,0 +1,1 @@
+INFO  2015-04-27 23:23:23,965  4708ms HomeController         Index              - Now you can see the results from database

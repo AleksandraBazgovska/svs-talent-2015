@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BikeConfiguration.cs" />
+    <Compile Include="DataContextFactory.cs" />
+    <Compile Include="DataManagerContext.cs" />
+    <Compile Include="Interfaces\IRegistarContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistarDbContext.cs" />
   </ItemGroup>
@@ -58,6 +61,10 @@
     <ProjectReference Include="..\Registar.DomainModel\Registar.DomainModel.csproj">
       <Project>{73bb7875-ce89-4c1f-85a7-9168ad4970dc}</Project>
       <Name>Registar.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reristar.Common\Reristar.Common.csproj">
+      <Project>{d6842129-31d4-4d2a-ae73-46285d1a7fd5}</Project>
+      <Name>Reristar.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

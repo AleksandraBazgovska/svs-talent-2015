@@ -6,10 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Registar.DomainModel;
+using Registar.DataLayer.Interfaces;
 
 namespace Registar.DataLayer
 {
-    public class RegistarDbContext : DbContext
+    public class RegistarDbContext : DbContext, IRegistarContext
     {
         public DbSet<Bike> Bikes { get; set; }
 

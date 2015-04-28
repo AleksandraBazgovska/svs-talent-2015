@@ -7,6 +7,7 @@ using Registar.BusinessLayer;
 using Registar.BusinessLayer.Contracts;
 using Registar.Models;
 using Registar.DomainModel;
+using Reristar.Common.Interfaces;
 
 namespace Registar.Controllers
 {
@@ -14,13 +15,24 @@ namespace Registar.Controllers
     {
         //
         // GET: /Home/
+        readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+        //private IRepository repo;
+        //public HomeController()
+        //{
+        //    this.repo = repo;
+        //}
 
         public ActionResult Index()
         {
+            logger.Info("Now you can see the results from database");
             //call BL
             BikeSearchCommand _command = new BikeSearchCommand();
             BikeSearchResult _result = CommandInvoker.InvokeCommand<BikeSearchCommand, BikeSearchResult>(_command);
             //
+
+            //Dokolku IRepository imashe metod SearchBikes,i toj da bide implementiran od IBikeRepository 
+            //var bikes = repo.SearchBikes().ToList();
             return View(_result.Result);
         }
 
