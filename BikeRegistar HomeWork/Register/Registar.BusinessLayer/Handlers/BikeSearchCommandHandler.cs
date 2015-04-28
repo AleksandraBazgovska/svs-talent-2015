@@ -12,7 +12,7 @@ using Registar.Repository.Interfaces;
 
 namespace Registar.BusinessLayer.Handlers
 {
-    internal class BikeSearchCommandHandler:CommandHandlerBase<BikeSearchCommand,BikeSearchResult>
+    public class BikeSearchCommandHandler:CommandHandlerBase<BikeSearchCommand,BikeSearchResult>
     {
 
         protected override BikeSearchResult ExecuteCommand(BikeSearchCommand command)

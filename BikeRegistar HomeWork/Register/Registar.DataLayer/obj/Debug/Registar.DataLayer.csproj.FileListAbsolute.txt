@@ -36,3 +36,5 @@ C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\BikeRegistar HomeWork\R
 C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\obj\Debug\Registar.DataLayer.pdb
 C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.dll
 C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.pdb
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.dll
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.pdb

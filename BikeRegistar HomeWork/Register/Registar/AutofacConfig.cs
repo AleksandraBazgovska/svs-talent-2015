@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using Registar.Common;
 using Registar.Repository;
 
 
@@ -15,8 +16,8 @@ namespace Registar
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
 
-            //// Register our Data dependencies
-            //builder.RegisterModule(new DataModule("RegistarDbContext"));
+            // Register our Data dependencies
+            builder.RegisterModule(new DataModule("RegistarDbContext"));
         }
     }
 }

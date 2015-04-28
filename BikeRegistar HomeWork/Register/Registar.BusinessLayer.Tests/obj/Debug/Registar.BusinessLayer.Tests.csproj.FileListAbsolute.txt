@@ -1,0 +1,1 @@
+C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.BusinessLayer.Tests\obj\Debug\Registar.BusinessLayer.Tests.csprojResolveAssemblyReference.cache

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Registar.DataLayer;
 using Registar.Repository.Interfaces;
 using REgistar.Repository;
 using Reristar.Common.Interfaces;
@@ -18,7 +19,8 @@ namespace Registar.Common
         protected override void Load(ContainerBuilder builder)
         {
 
-
+            builder.Register(c => new RegistarDbContext()).
+                            As<IDataContext>().InstancePerRequest();
             builder.RegisterType<BikeRepository>().As<IBikeRepository>().InstancePerRequest();
 
             base.Load(builder);

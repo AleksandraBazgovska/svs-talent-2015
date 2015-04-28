@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registar.DataLayer", "Regis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registar.Repository", "REgistar.Repository\Registar.Repository.csproj", "{D9A97C13-A555-40D8-AD95-7C0117267BA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registar.BusinessLayer.Tests", "Registar.BusinessLayer.Tests\Registar.BusinessLayer.Tests.csproj", "{CC6EB01B-1553-4753-B6A5-7C186AE0C37D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{D9A97C13-A555-40D8-AD95-7C0117267BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A97C13-A555-40D8-AD95-7C0117267BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A97C13-A555-40D8-AD95-7C0117267BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC6EB01B-1553-4753-B6A5-7C186AE0C37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC6EB01B-1553-4753-B6A5-7C186AE0C37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC6EB01B-1553-4753-B6A5-7C186AE0C37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC6EB01B-1553-4753-B6A5-7C186AE0C37D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +70,6 @@ Global
 		{D6842129-31D4-4D2A-AE73-46285D1A7FD5} = {363FC4EE-D6B9-4C4E-B48D-C97C6D0035FB}
 		{D46D8021-023F-49EF-B782-266B66BEF3F1} = {D7FA23DE-FB94-4166-B487-6CC3379B275B}
 		{D9A97C13-A555-40D8-AD95-7C0117267BA5} = {D7FA23DE-FB94-4166-B487-6CC3379B275B}
+		{CC6EB01B-1553-4753-B6A5-7C186AE0C37D} = {B7213FC2-36AF-4778-887E-B2F595CAE648}
 	EndGlobalSection
 EndGlobal
