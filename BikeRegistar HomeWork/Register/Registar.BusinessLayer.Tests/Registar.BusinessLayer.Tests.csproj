@@ -50,8 +50,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BikeRegistarCommand.cs" />
+    <Compile Include="BikeRegistarResult.cs" />
+    <Compile Include="BikeRegisterCommandHandler.cs" />
     <Compile Include="BikeSearchCommandHandlerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BikeRegisterCommandHandlerUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Registar.BusinessLayer\Registar.BusinessLayer.csproj">

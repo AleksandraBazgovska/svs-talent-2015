@@ -38,3 +38,17 @@ C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\BikeRegistar HomeWork\R
 C:\Users\Aleksandra\Desktop\Seavus_Obuka\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.pdb
 C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.dll
 C:\Users\code\Desktop\Alek\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.pdb
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DataLayer.dll.config
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DataLayer.dll
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DataLayer.pdb
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DomainModel.dll
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.dll
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Registar.DomainModel.pdb
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\Reristar.Common.pdb
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\obj\Debug\Registar.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\obj\Debug\Registar.DataLayer.dll
+C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DataLayer\obj\Debug\Registar.DataLayer.pdb
