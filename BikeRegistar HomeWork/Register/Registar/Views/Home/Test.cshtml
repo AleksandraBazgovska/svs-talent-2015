@@ -1,4 +1,4 @@
-﻿@Model Registar.Models.BikeModel
+﻿
 
 @{
     Layout = null;
@@ -10,11 +10,41 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Test</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript">
+
+        $(document).ready(function getSearchResult() {
+            var url = "http://localhost:61322/Home/GetSearchResult";
+           
+        
+           $.ajax({  
+                  
+                type: "GET",  
+                url: url,  
+                data: {},
+                dataType: "json",  
+                context: document.body,  
+                contentType: 'application/json; charset=utf-8'  
+            }).success(function (data) {  
+                var output = '<table><tr><th>RegNumber</th><th>Model</th></tr>';
+                for (var i in data.items)
+                {
+                    console.log(data.items[i]);
+                    output += "<tr><td>" + data.items[i].RegNumber + "</td><td>" + "<tr><td>" + data.items[i].Model + "</td><td>";
+                }
+                output += "</table>";
+                document.getElementById("placeholder").innerHTML = output;
+            });
+        })
+    </script>        
+        
+    
+    
 </head>
 <body>
-    <div>
+    
+        <div id="placeholder"></div>
         
-        @Model.
-    </div>
+    
 </body>
 </html>
