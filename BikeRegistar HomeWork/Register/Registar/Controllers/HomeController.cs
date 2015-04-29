@@ -36,6 +36,16 @@ namespace Registar.Controllers
             return View(_result.Result);
         }
 
+       
+        [HttpGet]
+        public ActionResult GetSearchResult()
+        {
+            BikeSearchCommand _command = new BikeSearchCommand();
+            BikeSearchResult _result = CommandInvoker.InvokeCommand<BikeSearchCommand, BikeSearchResult>(_command);
+
+            return Json(_result.Result, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult Index2()
         {
             List<BikeModel> _result = new List<BikeModel>();
@@ -48,6 +58,11 @@ namespace Registar.Controllers
             this.ViewData["SomeNewProperty"] = "theValue";
             //
             return View("Index",_result);
+        }
+
+        public ActionResult Test()
+        {
+            return View();
         }
 
     }

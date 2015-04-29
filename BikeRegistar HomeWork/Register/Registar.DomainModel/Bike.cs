@@ -16,7 +16,7 @@ namespace Registar.DomainModel
         //[Key]
         public int BikeId { get; set; }
 
-        public string RegNumber { get; set; }
+        public int RegNumber { get; set; }
 
         public string Producer { get; set; }
 
@@ -29,7 +29,7 @@ namespace Registar.DomainModel
 
         public string TypeOfBike { get; set; }
 
-        public string ImageUrl { get; set; }
+        
 
         
     }

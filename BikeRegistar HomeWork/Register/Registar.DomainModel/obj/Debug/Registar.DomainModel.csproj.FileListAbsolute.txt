@@ -52,3 +52,15 @@ C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\
 C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.csprojResolveAssemblyReference.cache
 C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.dll
 C:\Users\code\Desktop\aleksandra\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.pdb
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Registar.DomainModel.dll.config
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Registar.DomainModel.dll
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Registar.DomainModel.pdb
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.dll
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Reristar.Common.dll
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\Reristar.Common.pdb
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.xml
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.dll
+C:\Users\Aleksandra\Desktop\svs-talent-2015\svs-talent-2015\BikeRegistar HomeWork\Register\Registar.DomainModel\obj\Debug\Registar.DomainModel.pdb
