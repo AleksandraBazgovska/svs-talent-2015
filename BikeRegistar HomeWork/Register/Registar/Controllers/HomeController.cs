@@ -37,13 +37,13 @@ namespace Registar.Controllers
         }
 
        
-        [HttpGet]
+        [HttpPost]
         public ActionResult GetSearchResult()
         {
             BikeSearchCommand _command = new BikeSearchCommand();
             BikeSearchResult _result = CommandInvoker.InvokeCommand<BikeSearchCommand, BikeSearchResult>(_command);
 
-            return Json(_result.Result, JsonRequestBehavior.AllowGet);
+            return new JsonResult() { Data = _result.Result, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
         }
 
         public ActionResult Index2()

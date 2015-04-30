@@ -14,37 +14,64 @@
     <script language="javascript" type="text/javascript">
 
         $(document).ready(function getSearchResult() {
-            var url = "http://localhost:61322/Home/GetSearchResult";
+           
            
         
-           $.ajax({  
+            $.ajax({  
                   
-                type: "GET",  
-                url: url,  
-                data: {},
-                dataType: "json",  
-                context: document.body,  
-                contentType: 'application/json; charset=utf-8'  
-            }).success(function (data) {  
-                var output = '<table><tr><th>RegNumber</th><th>Model</th></tr>';
-                for (var i in data.items)
-                {
-                    console.log(data.items[i]);
-                    output += "<tr><td>" + data.items[i].RegNumber + "</td><td>" + "<tr><td>" + data.items[i].Model + "</td><td>";
-                }
-                output += "</table>";
-                document.getElementById("placeholder").innerHTML = output;
+                type: "POST",  
+                url: 'http://localhost:61322/Home/GetSearchResult',  
+                cache: false,
+                dataType: "json",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    drawTable(data);
+                    
+                },
+
+                error: function(data){
+                    console.log(data);
+            }
+                 
+               
+           
             });
+
+            function drawTable(data) {
+                for (var i = 0; i < data.length; i++) {
+                    drawRow(data[i]);
+                }
+            }
+
+            function drawRow(rowData) {
+                var row = $("<tr />")
+                $("#placeholder").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+                row.append($("<td>" + rowData.RegNumber + "</td>"));
+                row.append($("<td>" + rowData.Model + "</td>"));
+                row.append($("<td>" + rowData.Producer + "</td>"));
+            }
+
         })
+        
     </script>        
         
     
     
 </head>
 <body>
-    
-        <div id="placeholder"></div>
-        
+    <div class="table">
+        <table id="placeholder" class="table-bordered">
+
+            <tr>
+                <th>RegNumber</th>
+                <th>Model</th>
+                <th>Producer</th>
+            </tr>
+
+
+        </table>
+    </div>   
     
 </body>
 </html>

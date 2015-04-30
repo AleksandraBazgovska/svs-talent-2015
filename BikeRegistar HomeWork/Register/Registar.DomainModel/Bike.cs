@@ -13,6 +13,8 @@ namespace Registar.DomainModel
     /// </summary>
     public class Bike
     {
+        public int BikeOnwerId;
+
         //[Key]
         public int BikeId { get; set; }
 

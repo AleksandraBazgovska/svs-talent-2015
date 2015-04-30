@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Registar.BusinessLayer.Handlers;
 
 namespace Registar.BusinessLayer.Tests
 {
-   //public class BikeRegisterCommandHandler :
-   // {
-   // }
+    public class BikeRegisterCommandHandler: CommandHandlerBase<BikeRegisterCommand, BikeRegisterResult>
+    {
+        protected override BikeRegisterResult ExecuteCommand(BikeRegisterCommand command)
+        {
+            throw new NotImplementedException();
+
+        }
+    }
 }

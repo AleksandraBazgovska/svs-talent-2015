@@ -50,9 +50,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BikeRegistarCommand.cs" />
-    <Compile Include="BikeRegistarResult.cs" />
+    <Compile Include="BikeRegisterCommand.cs" />
     <Compile Include="BikeRegisterCommandHandler.cs" />
+    <Compile Include="BikeRegisterResult.cs" />
     <Compile Include="BikeSearchCommandHandlerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BikeRegisterCommandHandlerUnitTests.cs" />
